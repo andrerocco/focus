@@ -1,0 +1,17 @@
+{
+	"manifest_version": 3,
+	"name": "Focus. - Site Blocker",
+	"description": "Easily block distracting websites and stay focused.",
+	"version": "0.0.1",
+	"permissions": ["storage"],
+	"content_scripts": [
+		{
+			"matches": ["<all_urls>"],
+			"js": ["script/app.js"]
+		}
+	],
+	"action": {
+		"default_popup": "popup/popup.html",
+		"default_icon": "assets/icon-24px.png"
+	}
+}
